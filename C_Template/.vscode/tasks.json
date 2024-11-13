@@ -1,0 +1,38 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build for Simulation",
+            "type": "shell",
+            "command": "${workspaceFolder}\\buildSim.bat",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Builds the project in the build_sim folder using CMake and NMake in the VS Dev Environment"
+        },
+        {
+            "label": "Build for Device",
+            "type": "shell",
+            "command": "${workspaceFolder}\\buildDev.bat",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Builds the project in the build_device folder using CMake and NMake in the VS Dev Environment"
+        },
+        {
+            "label": "Build for Release",
+            "type": "shell",
+            "command": "${workspaceFolder}\\buildDev_Release.bat",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Builds the project for release in the build_device folder using CMake and NMake in the VS Dev Environment"
+        }
+    ]
+}
